@@ -42,22 +42,16 @@ class UserController:
         except Exception as e:
             return False, f"Error:{e}"
 
-
-
     def get_all(self):
         try:
-            users=self.__service.get_all()
+            users = self.__service.get_all()
             return True, users
         except Exception as e:
             return False, f"Error:{e}"
 
-
-    def get_by_name(self,name):
+    def get_by_name(self, name):
         try:
-            users=self.__service.get_by_name(name)
+            users = self.__service.get_by_name(name)
             return True, users
         except Exception as e:
             return False, f"Error:{e}"
-
-
-
